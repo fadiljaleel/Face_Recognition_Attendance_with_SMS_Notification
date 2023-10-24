@@ -79,7 +79,7 @@ def getAbsentStudentNames(classnames):
         attendance_data = f.readlines()
         attendance_names = [line.split(',')[0] for line in attendance_data]
 
-    for class_name in classnames:
+    for class_name in classnames:   
         if class_name not in attendance_names:
             absent_students.append(class_name)
     return absent_students
